@@ -1,0 +1,40 @@
+.pricing {
+  padding: 3rem 1rem;
+  background: #f7fafd;
+  text-align: center;
+}
+.pricing-table {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto 0 auto;
+  max-width: 900px;
+}
+.pricing-item {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.04);
+  padding: 1.5rem 1.2rem;
+  min-width: 200px;
+  max-width: 240px;
+  flex: 1 1 200px;
+}
+.price {
+  font-size: 1.3rem;
+  color: #2196f3;
+  font-weight: 700;
+  margin: 0.7rem 0;
+}
+.pricing-note {
+  margin-top: 1.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+@media (max-width: 700px) {
+  .pricing-table {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

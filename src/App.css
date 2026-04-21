@@ -1,0 +1,117 @@
+/* Improve dark mode text visibility for all sections */
+.dark-mode .services,
+.dark-mode .pricing,
+.dark-mode .service-area,
+.dark-mode .reviews,
+.dark-mode .faq {
+  color: #f4f8fb !important;
+}
+
+.dark-mode .service-item,
+.dark-mode .pricing-item,
+.dark-mode .review-item,
+.dark-mode .faq-item,
+.dark-mode .map-placeholder {
+  background: #23272a !important;
+  color: #f4f8fb !important;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.12);
+}
+
+.dark-mode .service-area ul,
+.dark-mode .reviews-list,
+.dark-mode .faq-list {
+  color: #f4f8fb !important;
+}
+
+/* Animations for section fade-in */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1.2s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+body.dark-mode {
+  background: #181a1b !important;
+  color: #f4f8fb !important;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer,
+.dark-mode .service-area,
+.dark-mode .about,
+.dark-mode .services,
+.dark-mode .pricing,
+.dark-mode .booking,
+.dark-mode .reviews,
+.dark-mode .faq,
+.dark-mode .contact,
+.dark-mode .safety,
+.dark-mode main {
+  background: #181a1b !important;
+  color: #f4f8fb !important;
+}
+
+.dark-mode .navbar-links a,
+.dark-mode .footer-links a {
+  color: #90caf9 !important;
+}
+
+.dark-mode .navbar-title .den {
+  color: #90caf9 !important;
+}
+
+.dark-toggle {
+  margin-left: 1.5rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  border: none;
+  background: #2196f3;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.dark-toggle:hover {
+  background: #1769aa;
+}
+.App {
+  text-align: center;
+
+@import './components/Navbar.css';
+@import './components/Footer.css';
+@import './components/Homepage.css';
+@import './components/About.css';
+@import './components/Services.css';
+@import './components/Pricing.css';
+@import './components/Booking.css';
+@import './components/ServiceArea.css';
+@import './components/Reviews.css';
+@import './components/FAQ.css';
+@import './components/Contact.css';
+@import './components/Safety.css';
+
+.App {
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  background: #f4f8fb;
+  color: #222;
+  min-height: 100vh;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding-top: 0;
+  }
+}
+}

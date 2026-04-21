@@ -1,0 +1,23 @@
+.safety {
+  padding: 3rem 1rem;
+  background: #f7fafd;
+  text-align: center;
+}
+.safety ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  text-align: left;
+}
+.safety li {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(33,150,243,0.04);
+  padding: 1.2rem 1.2rem 0.7rem 1.2rem;
+  margin-bottom: 1.2rem;
+  color: #222;
+}
+.safety strong {
+  color: #2196f3;
+}

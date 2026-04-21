@@ -1,0 +1,134 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+.navbar-logo img {
+  height: 38px;
+  margin-right: 0.7rem;
+}
+.navbar-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #3a3a3a;
+  letter-spacing: 1px;
+}
+.navbar-title .den {
+  color: #2196f3;
+}
+.navbar-links {
+  display: flex;
+  gap: 1.2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: max-height 0.3s;
+}
+.navbar-links a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar-links a:hover {
+  color: #2196f3;
+}
+
+/* Mobile menu styles */
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+  }
+  .navbar-logo {
+    flex: 1;
+  }
+  .navbar-menu-bar {
+    display: block;
+    z-index: 120;
+  }
+  .menu-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+  }
+  .menu-bar {
+    width: 28px;
+    height: 3px;
+    background: #2196f3;
+    border-radius: 2px;
+    transition: all 0.3s;
+    display: block;
+  }
+  .menu-bar.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-bar.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .navbar-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(33,150,243,0.08);
+    z-index: 110;
+    transition: max-height 0.3s;
+  }
+  .navbar-links.open {
+    max-height: 600px;
+    padding: 1rem 0;
+  }
+  .navbar-links li {
+    width: 100%;
+    padding: 0.7rem 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  .navbar-links a {
+    width: 100%;
+    display: block;
+    color: #3a3a3a;
+    font-size: 1.1rem;
+  }
+  .dark-mode .navbar-links {
+    background: #23272a;
+  }
+  .dark-mode .navbar-links a {
+    color: #90caf9;
+  }
+  .dark-toggle {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/* Hide menu bar on desktop */
+.navbar-menu-bar {
+  display: none;
+}
