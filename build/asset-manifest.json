@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/DRIVERS-DEN/static/css/main.79cf696e.css",
+    "main.js": "/DRIVERS-DEN/static/js/main.8686d91b.js",
+    "static/js/453.bbf24fa1.chunk.js": "/DRIVERS-DEN/static/js/453.bbf24fa1.chunk.js",
+    "static/media/new.jpeg": "/DRIVERS-DEN/static/media/new.05e092eefd0cd848cffd.jpeg",
+    "index.html": "/DRIVERS-DEN/index.html",
+    "main.79cf696e.css.map": "/DRIVERS-DEN/static/css/main.79cf696e.css.map",
+    "main.8686d91b.js.map": "/DRIVERS-DEN/static/js/main.8686d91b.js.map",
+    "453.bbf24fa1.chunk.js.map": "/DRIVERS-DEN/static/js/453.bbf24fa1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79cf696e.css",
+    "static/js/main.8686d91b.js"
+  ]
+}
